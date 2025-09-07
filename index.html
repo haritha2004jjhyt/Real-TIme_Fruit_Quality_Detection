@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Fruit Quality Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .content {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Real-Time Fruit Quality Detection</h1>
+
+    <button class="button" onclick="openInNewTab('#about')">About Project</button>
+    <button class="button" onclick="openInNewTab('https://drive.google.com/file/d/1T-4z44THRfHyzbpnU4Om5ZMcg9TZjLem/view?usp=drivesdk')">View Project Report.</button>
+
+    <div id="about" class="content">
+        <h2>1. Introduction</h2>
+        <p>Real-time fruit quality detection leverages advanced technologies such as computer vision, machine learning, and spectroscopy to assess the quality of fruits rapidly and accurately. This process typically involves several key steps: image acquisition, feature extraction, and classification.</p>
+
+        <h3>1.1 Image Acquisition</h3>
+        <p>In the image acquisition phase, high-resolution cameras capture detailed images of the fruit. These images are then processed using computer vision techniques to extract features such as color, texture, shape, and size, which are indicative of the fruit’s quality.</p>
+
+        <h3>1.2 Feature Extraction</h3>
+        <p>Color analysis can help detect ripeness, while texture analysis can reveal defects like bruises or blemishes. Machine learning algorithms analyze these features by training models on large datasets of fruit images to distinguish between high-quality and defective fruits.</p>
+
+        <h2>2. Machine Learning in Fruit Quality Detection</h2>
+        <p>Convolutional Neural Networks (CNNs) are particularly effective for this purpose due to their ability to automatically identify relevant features from raw image data.</p>
+
+        <h3>2.1 CNN Architecture</h3>
+        <p>We use 64 different kernels of size 3x3 on the image for convolution. The final feature map obtained after the first convolution has a size of 26x26. MaxPooling is applied, reducing the size to 13x13. This process continues, and finally, the feature map is flattened and passed through the neural network for further classification.</p>
+
+        <h3>2.2 Activation Functions</h3>
+        <p>Rectified Linear Unit (ReLU) is used as the activation function for convolutional layers, and softmax is used for the final classification layer.</p>
+
+        <h2>3. Real-Time Implementation</h2>
+        <p>Real-time implementation requires robust hardware and optimized software to process data quickly. The results are displayed instantaneously, allowing for immediate sorting and grading of fruits.</p>
+
+        <h3>3.1 Performance Benefits</h3>
+        <p>This technology significantly reduces human error, increases efficiency, and ensures consistent quality of fruit products, benefiting stakeholders in the supply chain.</p>
+
+        <h2>4. Future Work</h2>
+        <p>Future work could focus on enhancing the system's scalability and adaptability to different fruit varieties and environmental conditions. Additionally, integrating advanced sensor technologies and improving real-time decision-making with edge computing will further enhance performance.</p>
+
+        <h2>5. Conclusion</h2>
+        <p>Real-time fruit quality detection holds immense potential for revolutionizing fruit production, distribution, and consumption. By utilizing computer vision, machine learning, and sensor integration, this technology offers rapid and accurate insights into fruit quality, paving the way for more sustainable and efficient agricultural practices.</p>
+
+        <h2>6. References</h2>
+        <ul>
+            <li>[1] E. Theodoridou et al., "Hand Tracking and Gesture Recognition by Multiple Contactless Sensors: A Survey," IEEE Transactions on Human-Machine Systems, 2023.</li>
+            <li>[2] M. Hu, G. Brazil, N. Li, "Camera Self-Calibration Using Human Faces," IEEE International Conference on Automatic Face and Gesture Recognition, 2023.</li>
+            <li>[3] N. Mohamed, M. B. Mustafa, N. Jomhari, "A Review of the Hand Gesture Recognition System," IEEE Access, 2021.</li>
+            <li>[4] S. Guliani, R. Nagpal, "Gesture Controlled Mouse Navigation: Hand Landmark Approach," IEEE Conference on Cloud Computing, 2023.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
